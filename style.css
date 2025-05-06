@@ -4,16 +4,17 @@
 	box-sizing: border-box;
   }
   
-body {
+  body {
 	background: url('bluetabblebg.jpg') no-repeat center center fixed;
 	background-size: cover; 
-	height: 100vh;
-	font-family: 'Arial', sans-serif;
-	color: #fff;
+	min-height: 100vh;
+	overflow-y: auto;
 	display: flex;
 	flex-direction: column;
-  }
-  
+	font-family: 'Arial', sans-serif;
+	color: #fff;
+}
+
 
   .social-media {
 	display: flex;
