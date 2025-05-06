@@ -1,0 +1,90 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+body {
+	background: url('bluetabblebg.jpg') no-repeat center center fixed;
+	background-size: cover; 
+	height: 100vh;
+	font-family: 'Arial', sans-serif;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+  }
+  
+
+  .social-media {
+	display: flex;
+	justify-content: flex-end;
+	padding: 20px;
+	gap: 20px;
+  }
+  
+  .social-media img {
+	width: 40px;
+	height: 40px;
+	transition: transform 0.3s ease;
+  }
+  
+  .social-media img:hover {
+	transform: scale(1.2);
+  }
+  
+  .profile-picture {
+	display: flex;
+	justify-content: center;
+	margin-top: 60px; 
+  }
+  
+  .profile-picture img {
+	width: 150px; 
+	height: 150px;
+	border-radius: 50%; 
+	border: 5px solid #fff; 
+	object-fit: cover; 
+	transition: transform 0.3s ease;
+  }
+  
+  .profile-picture img:hover {
+	transform: scale(1.1); 
+  }
+  
+  .projects {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+  }
+  
+  .btn {
+	background: linear-gradient(90deg, #0056b3, #003d7a); /* Cor mais escura */
+	padding: 15px 30px;
+	border: none;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+	font-weight: bold;
+	transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn:hover {
+	background: linear-gradient(90deg, #003d7a, #0056b3); 
+	transform: scale(1.05);
+  }
+  
+  
+  @media (max-width: 600px) {
+	.social-media {
+	  justify-content: center;
+	}
+  
+	.projects {
+	  padding: 20px;
+	}
+  }
+  
